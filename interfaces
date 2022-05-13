@@ -1,92 +1,103 @@
-# Include files from /etc/network/interfaces.d:
-source-directory /etc/network/interfaces.d
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
 
-# Cloud images dynamically generate config fragments for newly
-# attached interfaces. See /etc/udev/rules.d/75-cloud-ifupdown.rules
-# and /etc/network/cloud-ifupdown-helper. Dynamically generated
-# configuration fragments are stored in /run:
-source-directory /run/network/interfaces.d
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The normal eth0
 auto eth0
+iface eth0 inet dhcp
+ up sleep 5; dhclient -1 -6 -nw -cf /etc/dhcp/dhclient6.conf -lf /var/lib/dhcp/dhclient6.eth0.leases -v eth0 || true # ignore failure
+
+# Maybe the VM has 2 NICs?
+allow-hotplug eth1
+iface eth1 inet dhcp
+
+# Maybe the VM has 3 NICs?
+allow-hotplug eth2
+iface eth2 inet dhcp
 iface eth0 inet static
-address 10.0.0.4
-netmask 255.255.255.000
-auto eth0:1
-iface eth0:1 inet static
+
 address 10.0.0.5
-netmask 255.255.255.000
-auto eth0:2
-iface eth0:2 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.6
-netmask 255.255.255.000
-auto eth0:3
-iface eth0:3 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.7
-netmask 255.255.255.000
-auto eth0:4
-iface eth0:4 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.8
-netmask 255.255.255.000
-auto eth0:5
-iface eth0:5 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.9
-netmask 255.255.255.000
-auto eth0:6
-iface eth0:6 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.10
-netmask 255.255.255.000
-auto eth0:7
-iface eth0:7 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.11
-netmask 255.255.255.000
-auto eth0:8
-iface eth0:8 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.12
-netmask 255.255.255.000
-auto eth0:9
-iface eth0:9 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.13
-netmask 255.255.255.000
-auto eth0:10
-iface eth0:10 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.14
-netmask 255.255.255.000
-auto eth0:11
-iface eth0:11 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.15
-netmask 255.255.255.000
-auto eth0:12
-iface eth0:12 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.16
-netmask 255.255.255.000
-auto eth0:13
-iface eth0:13 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.17
-netmask 255.255.255.000
-auto eth0:14
-iface eth0:14 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.18
-netmask 255.255.255.000
-auto eth0:15
-iface eth0:15 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.19
-netmask 255.255.255.000
-auto eth0:16
-iface eth0:16 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.20
-netmask 255.255.255.000
-auto eth0:17
-iface eth0:17 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.21
-netmask 255.255.255.000
-auto eth0:18
-iface eth0:18 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.22
-netmask 255.255.255.000
-auto eth0:19
-iface eth0:19 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.23
-netmask 255.255.255.000
-auto eth0:20
-iface eth0:20 inet static
+netmask 255.255.255.0
+
+iface eth0 inet static
 address 10.0.0.24
-netmask 255.255.255.000
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.25
+netmask 255.255.255.0
