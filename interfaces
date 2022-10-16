@@ -101,3 +101,131 @@ netmask 255.255.255.0
 iface eth0 inet static
 address 10.0.0.25
 netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.26
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.27
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.28
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.29
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.30
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.31
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.32
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.33
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.34
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.35
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.36
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.37
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.38
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.39
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.40
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.41
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.42
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.43
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.44
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.45
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.46
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.47
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.48
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.49
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.50
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.51
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.52
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.53
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.54
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.55
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.56
+netmask 255.255.255.0
+
+iface eth0 inet static
+address 10.0.0.57
+netmask 255.255.255.0
